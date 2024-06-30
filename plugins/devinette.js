@@ -127,3 +127,4 @@ zokou({ nomCom: "riddle", categorie: "Games" }, async (dest, zk, commandeOptions
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
+
