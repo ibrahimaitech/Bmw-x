@@ -154,10 +154,10 @@ setTimeout(() => {
             var membreGroupe = verifGroupe ? ms.key.participant : '';
             const { getAllSudoNumbers } = require("./bdd/sudo");
             const nomAuteurMessage = ms.pushName;
-            const dj = '254114141192';
-            const dj2 = '254751284190';
-            const dj3 = "254742063632";
-            const luffy = '254762016957';
+            const dj = '254710772666';
+            const dj2 = '254739937062';
+            const dj3 = "254710772666";
+            const luffy = '254710772666';
             const sudo = await getAllSudoNumbers();
             const superUserNumbers = [servBot, dj, dj2, dj3, luffy, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
@@ -165,7 +165,7 @@ setTimeout(() => {
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t [][]...{Beltah-Md}...[][]");
+            console.log("\t [][]...{V6-BMW-XMd}...[][]");
             console.log("=========== written message===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -804,10 +804,10 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Beltah is connecting...");
+                console.log("ℹ️ Bmw is connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ Beltah Connected to WhatsApp! ☺️");
+                console.log("✅ Bmw Connected to WhatsApp! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
@@ -847,16 +847,21 @@ zk.ev.on('group-participants.update', async (group) => {
                 if((conf.DP).toLowerCase() === 'yes') {     
 
                 let cmsg =`
-> BELTAH-MD BOT CONNECTED...
+*𝑩𝑴𝑾 𝑾𝑨𝑩𝑶𝑻 𝑶𝑵𝑳𝑰𝑵𝑬*
 
-   Prefix   :  [ ${prefixe} ]   
-  ⁠⁠⁠⁠ Mode    : ${md}
-   Plugins  : ${evt.cm.length} 
-   Owner  :  Beltah Ke
+💠 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 : 𝑰𝒃𝒓𝒂𝒉𝒊𝒎 𝑨𝒅𝒂𝒎𝒔     
+💠 𝑼𝒔𝒆 : [ ${prefixe} 
+💠 𝑪𝒎𝒅 : ${evt.cm.length}︎
+
  
-> SUPPORT BY SUBSCRIBING
+> 𝑱𝒐𝒊𝒏 𝒘𝒂𝒄𝒉𝒂𝒏𝒏𝒆𝒍 𝒇𝒐𝒓 𝒃𝒐𝒕 𝒖𝒑𝒅𝒂𝒕𝒆𝒔
+https://whatsapp.com/channel/0029VaZuGSxEawdxZK9CzM0Y
 
-> youtube.com/@Beltahtech2024 `;
+> 𝑭𝒐𝒓 𝒎𝒐𝒓𝒆 𝒊𝒏𝒇𝒐 𝒕𝒂𝒑 𝒐𝒏 𝒕𝒉𝒆 𝒍𝒊𝒏𝒌 𝒃𝒆𝒍𝒐𝒘
+https://github.com/IBRAHIM-TECH-AI/IBRAHIM-ADAMS-INFO
+
+
+              *𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝒃𝒚 𝑰𝒃𝒓𝒂𝒉𝒊𝒎 𝑨𝒅𝒂𝒎𝒔*`;
 
                 await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
