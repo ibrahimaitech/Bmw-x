@@ -1,23 +1,23 @@
 {
-  "name": "bmw-xmd",
+  "name": "beltah-md",
   "version": "1.0.0",
   "description": "",
-  "main": "ibrahim.js",
+  "main": "beltah.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "s": "node ibrahim.js",
-    "beltah": "pm2 start ibrahim.js --attach --max-memory-restart 490M",
+    "s": "node beltah.js",
+    "beltah": "pm2 start beltah.js --attach --max-memory-restart 490M",
     "c": "tsc"
   },
   "keywords": [
     "bot",
     "Baileys",
-    "bmwmd",
+    "Beltah",
     "whatsapp",
     "whatsapp-bot",
-    "ibrahimadams"
+    "Faouz995"
   ],
-  "author": "Ibrahim Adams",
+  "author": "Beltah Tech Team",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
