@@ -813,14 +813,14 @@ zk.ev.on('group-participants.update', async (group) => {
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("Beltah Md is Online 🕸\n\n");
+                console.log("Bmw Md is Online 🕸\n\n");
                 //chargement des commandes 
-                console.log("Loading Beltah Commands ...\n");
-                fs.readdirSync(__dirname + "/beltah").forEach((fichier) => {
+                console.log("Loading bmw Commands ...\n");
+                fs.readdirSync(__dirname + "/plugins").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
-                            require(__dirname + "/beltah/" + fichier);
-                            console.log(fichier + " Installed Successfully✔️");
+                            require(__dirname + "/plugins/" + fichier);
+                            console.log(fichier + " Connected Successfully✅");
                         }
                         catch (e) {
                             console.log(`${fichier} could not be installed due to : ${e}`);
