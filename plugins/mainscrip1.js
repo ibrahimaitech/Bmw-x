@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const { zokou } = require("../framework/zokou");
 zokou({ nomCom: "sc", reaction: "🚘", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
     console.log("Commande saisie !!!s");
-    let z = '*BMW MD GITHUB LINK*  \n\n ' + "Created by : Ibrahim Adams*"\n\n;
-    let d = ' > *LINK* : https://github.com/ibrahimaitech/BMW-MD';
+    let z = '*BMW MD GITHUB LINK*  \n\n ' + "Created by : Ibrahim Adams*";
+    let d = '                                                                             > *LINK* : https://github.com/ibrahimaitech/BMW-MD';
     let varmess = z + d;
     var img = 'https://telegra.ph/file/fd124f7e9271111c3bcc1.jpg';
     await zk.sendMessage(dest, { image: { url: img }, caption: varmess });
