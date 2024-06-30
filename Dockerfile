@@ -10,7 +10,7 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/*
   
 RUN git clone https://github.com/kingibrahimtech/Bmw-xmd.git /root/bmwmd
-WORKDIR /root/bmwmd/
+WORKDIR /root/ibrahim/
 
 
 COPY package.json .
