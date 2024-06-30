@@ -28,7 +28,7 @@ zokou(
       
     
      
-    moment.tz.setDefault('Etc/GMT');
+    moment.tz.setDefault('EAT');
 
 // Créer une date et une heure en GMT
 const temps = moment().format('HH:mm:ss');
@@ -38,12 +38,12 @@ const date = moment().format('DD/MM/YYYY');
 *Owner* : ${s.OWNER_NAME}
 *Mode* : ${mode}
 *Date* : ${date}
-*Hours(GMT)* : ${temps}
+*Hours(EAT)* : ${temps}
 
  ${message}
  
  
- *BELTAH_MD version 2.0*`
+ *IBRAHIM-TECH ACTIVE RUNNING SPEED 90000MS✅*`
 
  if (lien.match(/\.(mp4|gif)$/i)) {
     try {
@@ -74,7 +74,7 @@ else {
         if(!superUser) { repondre("there is no alive for this bot") ; return};
 
       await   repondre("You have not yet saved your alive, to do this;  enter after alive your message and your image or video link in this context: .alive message;lien");
-         repondre("don't do fake thinks :)")
+         repondre("don't do fake things :)")
      }
  } else {
 
@@ -88,7 +88,7 @@ else {
     
 await addOrUpdateDataInAlive(texte , tlien)
 
-repondre(' Holla🥴, *BELTAH-MD BOT* is alive just like you gee. ')
+repondre('message alive refresh successfully')
 
 }
     });
