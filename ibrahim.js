@@ -847,11 +847,11 @@ zk.ev.on('group-participants.update', async (group) => {
                 if((conf.DP).toLowerCase() === 'yes') {     
 
                 let cmsg =`
-*𝑩𝑴𝑾 𝑾𝑨𝑩𝑶𝑻 𝑶𝑵𝑳𝑰𝑵𝑬*
+> *𝑩𝑴𝑾 𝑾𝑨𝑩𝑶𝑻 𝑶𝑵𝑳𝑰𝑵𝑬*
 
 💠 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 : 𝑰𝒃𝒓𝒂𝒉𝒊𝒎 𝑨𝒅𝒂𝒎𝒔     
-💠 𝑼𝒔𝒆 : [ ${prefixe} 
-💠 𝑪𝒎𝒅 : ${evt.cm.length}︎
+💠 𝑼𝒔𝒆 :  ${prefixe} 
+💠 𝑷𝒍𝒖𝒈𝒊𝒏𝒔 : ${evt.cm.length}︎
 
  
 > 𝑱𝒐𝒊𝒏 𝒘𝒂𝒄𝒉𝒂𝒏𝒏𝒆𝒍 𝒇𝒐𝒓 𝒃𝒐𝒕 𝒖𝒑𝒅𝒂𝒕𝒆𝒔
@@ -860,8 +860,7 @@ https://whatsapp.com/channel/0029VaZuGSxEawdxZK9CzM0Y
 > 𝑭𝒐𝒓 𝒎𝒐𝒓𝒆 𝒊𝒏𝒇𝒐 𝒕𝒂𝒑 𝒐𝒏 𝒕𝒉𝒆 𝒍𝒊𝒏𝒌 𝒃𝒆𝒍𝒐𝒘
 https://github.com/IBRAHIM-TECH-AI/IBRAHIM-ADAMS-INFO
 
-
-              *𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝒃𝒚 𝑰𝒃𝒓𝒂𝒉𝒊𝒎 𝑨𝒅𝒂𝒎𝒔*`;
+ *𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝒃𝒚 𝑰𝒃𝒓𝒂𝒉𝒊𝒎 𝑨𝒅𝒂𝒎𝒔*`;
 
                 await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
