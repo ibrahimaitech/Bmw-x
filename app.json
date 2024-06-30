@@ -2,8 +2,8 @@
   "name":"V-6-BMW-XMD",
   "description":"Deploy now your bot, Bmw was developed by Ibrahim Adams.Make sure you fill all valuables to avoid bot from sleeping. ",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg",
-  "repository":"https://github.com/Beltahmd/beltah-md",
+  "logo":"https://telegra.ph/file/fd124f7e9271111c3bcc1.jpg",
+  "repository":"https://github.com/ibrahimaitech/BMW-MD",
   "succes_url":"/",
   "stack":"container",
   "env":{
@@ -35,14 +35,14 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"𝗕𝗘𝗟𝗧𝗔𝗛 𝗠𝗗",
+      "value":" 𝐁𝐌𝐖-𝐗𝐌𝐃",
       "required":false
 
     } ,
      "BOT_MENU_LINKS" : {
     
       "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://telegra.ph/file/81d4a442a1bd96339924e.mp4,https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg",
+      "value":"https://telegra.ph/file/7d07f6bb6562e3c7b9599.mp4",
       "required":false
        
      },
@@ -76,14 +76,14 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "Beltahdev"
+    "value": "𝐈𝐛𝐫𝐚𝐡𝐢𝐦 𝐀𝐝𝐚𝐦𝐬"
   },
     "NUMERO_OWNER":
   {
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": "254114141192,254737681758"
+    "value": "254739937062,254710772666"
   },
     "WARN_COUNT":
   {
