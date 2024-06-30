@@ -7,7 +7,7 @@ const {
   zokou
 } = require("../framework/zokou");
 zokou({
-  'nomCom': "bme",
+  'nomCom': "bmw",
   'category': 'general', 
   'reaction': '😂',
   'nomFichier': __filename
