@@ -142,3 +142,4 @@ zokou({nomCom:"couplepp",categorie: "Weeb",reaction : "💞"},async(dest,zk,comm
 }
       )
 
+
