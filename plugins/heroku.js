@@ -32,7 +32,7 @@ zokou(
 
 zokou(
     {
-        nomCom : "allvar",
+        nomCom : "getallvar",
         categorie : "heroku"
     }, async (dest , zk , commandeOptions) =>{
 
@@ -48,9 +48,9 @@ zokou(
 			let baseURI = "/apps/" + s.HEROKU_APP_NAME;
 
             let h = await heroku.get(baseURI+'/config-vars')
-let str = '*All my HEROKU Vars*\n\n'
+let str = '*Plugins varies vars*\n\n'
 for (vr in h) {
-str+= '⚡ *'+vr+'* '+'= '+h[vr]+'\n'
+str+= '🚘 *'+vr+'* '+'= '+h[vr]+'\n'
 }
  repondre(str)
 
