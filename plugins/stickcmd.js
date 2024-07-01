@@ -48,6 +48,7 @@ zokou(
               repondre('put the name of the command that you want to delete');
               return;
           }
+         
   
           const cmdToDelete = arg[0];
 
