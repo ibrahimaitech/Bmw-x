@@ -67,6 +67,27 @@ async (origineMessage, zk, commandeOptions) => {
 
 
 zokou({
+  nomCom: "House",
+  categorie: "Hentai",
+  reaction: "🙄"
+},
+async (origineMessage, zk, commandeOptions) => {
+  const { repondre, ms } = commandeOptions;
+
+  const url = 'https://api.maher-zubair.tech/wallpaper/random'//apiWaifu("neko"); // Remplace avec ton lien réel
+
+  try { for (let i = 0 ;i < 5 ; i++) {
+    const response = await axios.get(url);
+    const imageUrl = response.data.url;
+
+    zk.sendMessage(origineMessage, { image: { url: imageUrl } }, { quoted: ms }); }
+  } catch (error) {
+    repondre('Erreur lors de la récupération des données :', error);
+  }
+});
+
+
+zokou({
   nomCom: "blackpink",
   categorie: "Hentai",
   reaction: "🛸"
