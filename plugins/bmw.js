@@ -1,35 +1,28 @@
-'use strict';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const { france } = require("../framework/france");
+france({ nomCom: "bmw", reaction: "🚗", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
+    console.log("Commande saisie !!!s");
+    let z = '𝒀𝒆𝒔😉 𝑨𝒎 𝑩𝑴𝑾 𝑴𝑫 𝑨 𝑾𝒉𝒂𝒕𝒔𝒂𝒑𝒑 𝑩𝒐𝒕 𝑪𝒓𝒆𝒂𝒕𝒆𝒅 𝑩𝒚 𝑰𝒃𝒓𝒂𝒉𝒊𝒎 𝑨𝒅𝒂𝒎𝒔\n\n ' + "𝑰𝒇 𝒚𝒐𝒖 𝒘𝒂𝒏𝒕 𝒕𝒐 𝒖𝒔𝒆 𝒎𝒆 𝒋𝒖𝒔𝒕 𝒕𝒚𝒑𝒆 𝒎𝒆𝒏𝒖 𝒕𝒐 𝒄𝒐𝒎𝒎𝒂𝒏𝒅 𝒎𝒆";
+    let d = '                                                🏁𝑨𝒎 𝒕𝒉𝒆 𝒇𝒂𝒔𝒕𝒆𝒔𝒕 𝒃𝒐𝒕 𝒊𝒏 𝒕𝒉𝒆 𝒘𝒐𝒓𝒍𝒅';
+    let varmess = z + d;
+    var mp4 = 'https://telegra.ph/file/d98532bb4aa4569e92afb.mp4';
+    await zk.sendMessage(dest, { video: { url: mp4 }, caption: varmess });
+    //console.log("montest")
+    
+});
+console.log("mon test");
+/*module.exports.commande = () => {
+  var nomCom = ["test","t"]
+  var reaction="☺️"
+  return { nomCom, execute,reaction }
+};
 
-Object.defineProperty(exports, "__esModule", {
-  'value': true
-});
-const {
-  zokou
-} = require("../framework/zokou");
-zokou({
-  'nomCom': "bmw",
-  'category': 'general', 
-  'reaction': '😂',
-  'nomFichier': __filename
-}, async (_0x969b1f, _0x2501c9, _0x849359) => {
-  const _0x52fa52 = await fetch("https://api.github.com/repos/ibrahimaitech/BMW-MD");
-  const _0x34824f = await _0x52fa52.json();
-  if (_0x34824f) {
-    const _0x129946 = {
-      'stars': _0x34824f.stargazers_count,
-      'forks': _0x34824f.forks_count,
-      'lastUpdate': _0x34824f.updated_at,
-      'owner': _0x34824f.owner.login
-    };
-    const _0x359c05 = new Date(_0x34824f.created_at).toLocaleDateString("en-GB");
-    const _0x321f6c = "  *❒⁠⁠⁠⁠BMW MULTI-DEVICE RANK❒⁠⁠⁠⁠* \n\n Bmw is a great WhatsApp bot created by the *Ibrahim adams* that has been given " + _0x129946.stars + " 🌟 stars as a sign of loving it and a total of " + _0x129946.forks " users have deployed it by now....🤩\n__________________________________\n ◔͜͡◔Made on Earth by ʙᴇʟᴛᴀʜ ᴋᴇɴʏᴀ◔͜͡◔";
-    await _0x2501c9.sendMessage(_0x969b1f, {
-      'image': {
-        'url': "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg"
-      },
-      'caption': _0x321f6c
-    });
-  } else {
-    console.log("Could not fetch data");
-  }
-});
+async function  execute  (origineMessage,zok) {
+  console.log("Commande saisie !!!s")
+   let z ='Salut je m\'appelle *BMW-MD-REPO* \n\n '+'je suis un bot Whatsapp Multi-appareil '
+      let d =' developpé par *BMW-MD-REPO*'
+      let varmess=z+d
+      var img='https://telegra.ph/file/13d63c21c1a665bfd8324.jpg'
+await  zok.sendMessage(origineMessage,  { image:{url:img},caption:varmess});
+}  */ 
