@@ -67,14 +67,14 @@ async (origineMessage, zk, commandeOptions) => {
 
 
 zokou({
-  nomCom: "House",
+  nomCom: "porn",
   categorie: "Hentai",
   reaction: "🙄"
 },
 async (origineMessage, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
 
-  const url = 'https://api.maher-zubair.tech/wallpaper/random'//apiWaifu("neko"); // Remplace avec ton lien réel
+  const url = 'https://api.waifu.pics/nsfw/porn'//apiWaifu("neko"); // Remplace avec ton lien réel
 
   try { for (let i = 0 ;i < 5 ; i++) {
     const response = await axios.get(url);
