@@ -1,6 +1,6 @@
-const { zokou, sleep } = require('');
+const { zokou } = require("../framework/zokou");
 
-smd({ cmdname: "hack", type: "fun", info: "hacking prank", filename: __filename }, async (citel) => {
+zokou({ cmdname: "hack", type: "fun", info: "hacking prank", filename: __filename }, async (citel) => {
   const messages = [
     "Injecting Malware",
     " █ 10%",
