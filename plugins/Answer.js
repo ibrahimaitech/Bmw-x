@@ -98,7 +98,7 @@ fetch(`http://api.brainshop.ai/get?bid=177607&key=NwzhALqeO1kubFVD&uid=[uid]&msg
   });
 
 
-zokou({ nomCom: "gpt", reaction: "📡", categorie: "IA" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "gpt", reaction: "🤔", categorie: "IA" }, async (dest, zk, commandeOptions) => {
     const { repondre, arg, ms } = commandeOptions;
   
     try {
@@ -109,6 +109,30 @@ zokou({ nomCom: "gpt", reaction: "📡", categorie: "IA" }, async (dest, zk, com
       // Regrouper les arguments en une seule chaîne séparée par "-"
       const question = arg.join(' ');
       const response = await axios.get(`https://gpt4.giftedtech.workers.dev/?prompt=${question}`);
+      
+      const data = response.data;
+      if (data) {
+        repondre(data.result);
+      } else {
+        repondre("Error during response generation.");
+      }
+    } catch (error) {
+      console.error('Erreur:', error.message || 'Une erreur s\'est produite');
+      repondre("Oops, an error occurred while processing your request.");
+    }
+  });
+
+zokou({ nomCom: "lyrics", reaction: "📂", categorie: "IA" }, async (dest, zk, commandeOptions) => {
+    const { repondre, arg, ms } = commandeOptions;
+  
+    try {
+      if (!arg || arg.length === 0) {
+        return repondre(`Give me the name of the song.`);
+      }
+  
+      // Regrouper les arguments en une seule chaîne séparée par "-"
+      const question = arg.join(' ');
+      const response = await axios.get(`https://api.maher-zubair.tech/search/lyrics?=${question}`);
       
       const data = response.data;
       if (data) {
