@@ -36,7 +36,7 @@ ${lyrics.lyrics}`
         })
 
             
-Zokou({'nomCom': "lyrics",
+zokou({'nomCom': "lyrics",
   reaction: '📂',
   categorie: "Search"
 }, async (dest, zk, commandeOptions) => {
