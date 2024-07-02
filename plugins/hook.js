@@ -1,5 +1,8 @@
 const {zokou } = require("../framework/zokou");
 const axios = require('axios');
+const cheerio = require('cheerio');
+let func = require('../framework/mesfonctions') ;
+let hdb = require('../bdd/hentai') ;
 
 });
 zokou({
