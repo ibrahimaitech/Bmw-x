@@ -23,6 +23,67 @@ async (origineMessage, zk, commandeOptions) => {
 });
 
 
+zokou({
+  nomCom: "pussy",
+  categorie: "Hentai",
+  reaction: "🙄"
+},
+async (origineMessage, zk, commandeOptions) => {
+  const { repondre, ms } = commandeOptions;
+
+  const url = 'https://sd.giftedtech.workers.dev/?prompt=pussy'; // Remplace avec ton lien réel
+
+  try { for (let i = 0 ; i < 5 ; i++ ) {
+    const response = await axios.get(url);
+    const imageUrl = response.data.url;
+
+    zk.sendMessage(origineMessage, { image: { url: imageUrl } }, { quoted: ms }); }
+  } catch (error) {
+    repondre('Erreur lors de la récupération des données : ' +error);
+  }
+});
+
+
+zokou({
+  nomCom: "penis",
+  categorie: "Hentai",
+  reaction: "🙄"
+},
+async (origineMessage, zk, commandeOptions) => {
+  const { repondre, ms } = commandeOptions;
+
+  const url = 'https://sd.giftedtech.workers.dev/?prompt=penis'; // Remplace avec ton lien réel
+
+  try { for (let i = 0 ; i < 5 ; i++ ) {
+    const response = await axios.get(url);
+    const imageUrl = response.data.url;
+
+    zk.sendMessage(origineMessage, { image: { url: imageUrl } }, { quoted: ms }); }
+  } catch (error) {
+    repondre('Erreur lors de la récupération des données : ' +error);
+  }
+});
+
+zokou({
+  nomCom: "hwaifu",
+  categorie: "Hentai",
+  reaction: "🙄"
+},
+async (origineMessage, zk, commandeOptions) => {
+  const { repondre, ms } = commandeOptions;
+
+  const url = 'https://api.waifu.pics/nsfw/waifu'; // Remplace avec ton lien réel
+
+  try { for (let i = 0 ; i < 5 ; i++ ) {
+    const response = await axios.get(url);
+    const imageUrl = response.data.url;
+
+    zk.sendMessage(origineMessage, { image: { url: imageUrl } }, { quoted: ms }); }
+  } catch (error) {
+    repondre('Erreur lors de la récupération des données : ' +error);
+  }
+});
+
   /////////////// hneko //////////
 zokou({
   nomCom: "trap",
