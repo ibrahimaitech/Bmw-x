@@ -602,27 +602,6 @@ async (origineMessage, zk, commandeOptions) => {
 
 
 zokou({
-  nomCom: "sound",
-  categorie: "Hentai",
-  reaction: "🙄"
-},
-async (origineMessage, zk, commandeOptions) => {
-  const { repondre, ms } = commandeOptions;
-
-  const url = 'https://github.com/DGXeon/Tiktokmusic-API/raw/master/tiktokmusic/sound'//alive"); // Remplace avec ton lien réel
-
-  try { for (let i = 0 ;i < 5 ; i++) {
-    const response = await axios.get(url);
-    const audioUrl = response.data.url;
-
-    zk.sendMessage(origineMessage, { audio: { url: audioUrl } }, { quoted: ms }); }
-  } catch (error) {
-    repondre('Erreur lors de la récupération des données :', error);
-  }
-});
-
-
-zokou({
   nomCom: "blackpink",
   categorie: "Hentai",
   reaction: "🛸"
