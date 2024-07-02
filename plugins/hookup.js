@@ -1,11 +1,7 @@
 const {zokou } = require("../framework/zokou");
 const axios = require('axios');
-const cheerio = require('cheerio');
-let func = require('../framework/mesfonctions') ;
-let hdb = require('../bdd/hentai') ;
 
-}
-})
+
 zokou({
     'nomCom': _0x62298e(0xcc),
     'categorie': _0x62298e(0x13c),
