@@ -132,7 +132,7 @@ zokou({ nomCom: "lyrics", reaction: "📂", categorie: "IA" }, async (dest, zk, 
   
       // Regrouper les arguments en une seule chaîne séparée par "-"
       const question = arg.join(' ');
-      const response = await axios.get(`https://api.maher-zubair.tech/search/lyrics?=${question}`);
+      const response = await axios.get(`https://api.maher-zubair.tech/search/lyrics?q=${question}`);
       
       const data = response.data;
       if (data) {
