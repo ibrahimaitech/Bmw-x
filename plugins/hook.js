@@ -24,14 +24,14 @@ async (origineMessage, zk, commandeOptions) => {
 
 
 zokou({
-  nomCom: "pussy",
+  nomCom: "kenya",
   categorie: "Hentai",
-  reaction: "🙄"
+  reaction: "🇰🇪"
 },
 async (origineMessage, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
 
-  const url = 'https://sd.giftedtech.workers.dev/?prompt=pussy'; // Remplace avec ton lien réel
+  const url = 'https://sd.giftedtech.workers.dev/?prompt=lion'; // Remplace avec ton lien réel
 
   try { for (let i = 0 ; i < 5 ; i++ ) {
     const response = await axios.get(url);
@@ -45,14 +45,14 @@ async (origineMessage, zk, commandeOptions) => {
 
 
 zokou({
-  nomCom: "penis",
+  nomCom: "cow",
   categorie: "Hentai",
-  reaction: "🙄"
+  reaction: "😁"
 },
 async (origineMessage, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
 
-  const url = 'https://sd.giftedtech.workers.dev/?prompt=penis'; // Remplace avec ton lien réel
+  const url = 'https://sd.giftedtech.workers.dev/?prompt=cow'; // Remplace avec ton lien réel
 
   try { for (let i = 0 ; i < 5 ; i++ ) {
     const response = await axios.get(url);
