@@ -65,6 +65,35 @@ zokou({
 });
 
 zokou({
+  nomCom: "lyrics",
+  categorie: "Search"
+}, async (dest, zk, commandeOptions) => {
+  const { arg, repondre } = commandeOptions;
+  
+  if (!arg[0] || arg === "") {
+    repondre("Give me a query.\n*Example: .lyrics of dont call me song.*");
+    return;
+  }
+
+  const google = require('google-it');
+  try {
+    const results = await google({ query: arg.join(" ") });
+    let msg = `Google search for lyrics of : ${arg}\n\n`;
+
+    for (let result of results) {
+      msg += `➣ Title : ${result.title}\n`;
+      msg += `➣ Description : ${result.snippet}\n`;
+      msg += `➣ Link : ${result.link}\n\n────Tap on the to get yourlyrics────\n\n`;
+    }
+    
+   // const trdmsg = await traduire(msg,{to : 'fr'})
+    repondre(msg);
+  } catch (error) {
+    repondre("An error occurred during Google search.");
+  }
+});
+
+zokou({
   nomCom: "imdb",
   categorie: "Search"
 }, async (dest, zk, commandeOptions) => {
