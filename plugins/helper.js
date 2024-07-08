@@ -36,7 +36,7 @@ const date = moment().format('DD/MM/YYYY');
 ╏✰▏ *Developer* : *Ibrahim Adams*
 ╰──────────────────❒
 ╏✰▏ *Mode* : ${mode}
-╏✰▏ *Commands* : ${cm.length} 
+╏✰▏ *Made* : *Kenya*
 ╰──────────────────❒
 ╏✰▏ *Time* : ${temps} 
 ╏✰▏ *Ram* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
